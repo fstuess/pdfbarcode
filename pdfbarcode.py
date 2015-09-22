@@ -37,9 +37,8 @@ def getParms(argv):
         usage()
         sys.exit(2) 
     outputFile = None
-    print "#",opts,args
+    text = ""
     for opt, arg in opts:
-        print "optarg", opt, arg
         if opt in ("-i", "--input"):
             inputFile = open(arg, "rb")
         if opt in ("-o", "--output"):
