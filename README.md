@@ -16,6 +16,8 @@ Todos:
 - more parameterization for positions and sizes
 - checking for boundaries, text length
 - multipage numbering if wanted
+- python3 compatibility 
+- build a standalone, eg. freeze or cython
 
 
 
