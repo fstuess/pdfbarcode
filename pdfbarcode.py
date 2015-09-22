@@ -60,8 +60,7 @@ def write_out(newpdf,outfile):
     else:
         newpdf.write(outfile)
         
-if __name__ == "__main__":
-    infile, outfile, text = getParms(sys.argv)
+def process(infile, outfile, text):
     pdfr = PdfFileReader(infile)
     newpdf = PdfFileWriter()
     for pageNum in range(pdfr.getNumPages()):
@@ -69,6 +68,9 @@ if __name__ == "__main__":
         newpdf.addPage(add_BarCode(page,text))
     write_out(newpdf, outfile)
         
+if __name__ == "__main__":
+    infile, outfile, text = getParms(sys.argv)
+    process(infile, outfile, text)
         
         
         
