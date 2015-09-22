@@ -4,11 +4,11 @@ Written in python, you need reportlab and pyPdf.
 
 Usage:
 
-pdfbarcode.py -i input-pdf-filename  # writes to stdout
+pdfbarcode.py -i input-pdf-filename  -t "barcode text" # writes to stdout
 
 or:
 
-pdfbarcode.py -i input-pdf-filename -o output-pdf-filename
+pdfbarcode.py -i input-pdf-filename -o output-pdf-filename -t "barcode text"
 
 First steps stolen from https://github.com/glokem/barcodepdf.
 
@@ -16,6 +16,8 @@ Todos:
 - more parameterization for positions and sizes
 - checking for boundaries, text length
 - multipage numbering if wanted
+- python3 compatibility 
+- build a standalone, eg. freeze or cython
 
 
 
