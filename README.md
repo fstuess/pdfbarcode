@@ -13,7 +13,7 @@ pdfbarcode -i input-pdf-filename -o output-pdf-filename
 First steps stolen from https://github.com/glokem/barcodepdf.
 
 Todos: 
-- more parametrization, Position,sizes
+- more parameterization, Position,sizes
 - checking for boundaries, text length
 - multipage numbering if wanted
 
